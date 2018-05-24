@@ -1,0 +1,18 @@
+.main-nav {
+  background: $black;
+  height: $main-nav-height;
+  display: none;
+  padding: 1rem;
+
+  .menu a {
+    color: $body-font-color;
+  }
+
+  @include breakpoint(medium) {
+    @include flex-middle-justify;
+
+    .menu a {
+      color: $white;
+    }
+  }
+}

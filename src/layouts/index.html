@@ -9,15 +9,10 @@
     <title>{{meta-title}} | Foundation for Sites</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
-  <body class="{{page}} {{layout}}">
-    {{> mobile-navbar}}
-    <div class="off-canvas position-left in-canvas-for-medium" id="offCanvasMenu" data-off-canvas data-close-on-click="true" data-content-overlay="true">
-      {{> main-nav}}
-    </div>
-    <div class="off-canvas-content" data-off-canvas-content>
-      {{> body}}
-      {{> footer}}
-    </div>
+  <body>
+
+    {{> body}}
+
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>

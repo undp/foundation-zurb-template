@@ -1,0 +1,14 @@
+.mobile-navbar {
+  background: $black;
+  height: $main-nav-height;
+  @include flex-middle-justify;
+  padding: 1rem;
+
+  .menu a {
+    color: $white;
+  }
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+}

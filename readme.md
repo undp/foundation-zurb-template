@@ -1,4 +1,4 @@
-# ZURB Template
+# ZURB WebApp Template
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
@@ -22,13 +22,9 @@ To use this template, your computer needs:
 - [NodeJS](https://nodejs.org/en/) (Version 6 only, Tested with 6.11.4)
 - [Git](https://git-scm.com/)
 
-### Manual Setup
+### Setup
 
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/Infusionsoft.git
-```
+To set up the template, first download it.
 
 Then open the folder in your command line, and install the needed dependencies:
 
@@ -45,10 +41,40 @@ http://localhost:8000
 
 To create compressed, production-ready assets, run `yarn run build`.
 
-# Infusionsoft
+---
 
-### SVG Injectior
+# Panini Helpers
 
-Inject an SVG by using an `img` tag like so:
+We've added a Panini helpers for per-page or per-layout styles.
+
+[SEE EXAMPLE](http://notebooks.zurb.com/posts/10139362?t=f9b74287fe3ac074)
+
+---
+
+# Mixins
+
+We've added a few handy mixins for maintainable repeated code and faster development:
+
+### Avatar
+
+### Container Border
+
+### Flex Mixins
+
+---
+
+# Additional Project Dependencies
+
+The following dependencies are at your disposal:
+
+### SVG Injector
+
+Inject an SVG by using an `img` tag with the `.inject-me` class like so:
 
 `<img src="{{root}}assets/img/think.svg" class="inject-me" alt="think icon">`
+
+### Slick Carousel
+
+### AOS (Animate on Scroll)
+
+### Tablesaw
