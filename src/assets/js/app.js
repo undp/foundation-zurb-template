@@ -88,3 +88,12 @@ $(function () {
 var TablesawConfig = {
   swipeHorizontalThreshold: 15
 };
+
+// hamburger icon
+$('#offCanvasButton').click(function(){
+  $('.hamburger-icon').toggleClass('is-active');
+});
+
+$('.js-off-canvas-overlay').click(function(){
+  $('.hamburger-icon').removeClass('is-active');
+});

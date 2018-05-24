@@ -69,8 +69,10 @@
 
 // global styles
 @import 'global/layout';
+@import 'global/typography';
 
 // custom components
+@import 'components/navigation/hamburger-icon';
 @import 'components/navigation/main-nav';
 @import 'components/navigation/mobile-navbar';
 
