@@ -1,0 +1,28 @@
+# generic info
+lang: "en"
+logo: ""
+title: ""
+gtm: "GTM-5ZQRJS9"
+
+# page metadata
+meta: 
+  title: ""
+  description: ""
+  keywords: ""
+  canonical: ""
+  ogtitle: ""
+
+# i18n
+labels: 
+  undplong: "United Nations Development Programme"
+  undp: "UNDP"
+  sdglong: "Sustainable Development Goals"
+  learnmore: "Learn more"
+  blank: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+  message: "Message"
+  share: "Share"
+  writing: "Writing"
+  scroll: "Scroll/swipe down to see more"
+  source: "Source"
+  
+# content

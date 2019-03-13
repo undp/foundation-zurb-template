@@ -32,7 +32,7 @@ function loadConfig() {
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, styleGuide));
+ gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, github));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -49,6 +49,13 @@ function clean(done) {
 function copy() {
   return gulp.src(PATHS.assets)
     .pipe(gulp.dest(PATHS.dist + '/assets'));
+}
+
+function github() {
+  // windows only!
+  var target = __dirname.split('\\').pop();
+  return gulp.src(PATHS.dist + '/**/*')
+    .pipe($.if(PRODUCTION, gulp.dest(PATHS.github + target)));
 }
 
 // Copy page templates into finished HTML files
@@ -68,14 +75,6 @@ function pages() {
 function resetPages(done) {
   panini.refresh();
   done();
-}
-
-// Generate a style guide from the Markdown content and HTML template in styleguide/
-function styleGuide(done) {
-  sherpa('src/styleguide/index.md', {
-    output: PATHS.dist + '/styleguide.html',
-    template: 'src/styleguide/template.html'
-  }, done);
 }
 
 // Compile Sass into CSS

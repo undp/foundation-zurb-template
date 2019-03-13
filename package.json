@@ -1,7 +1,7 @@
 {
-  "name": "foundation-zurb-template",
+  "name": "undp-foundation-zurb-template",
   "version": "1.0.0",
-  "description": "Official ZURB Template for Foundation for Sites.",
+  "description": "UNDP version of Official ZURB Template for Foundation for Sites.",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
@@ -47,11 +47,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-zurb-template.git"
+    "url": "https://github.com/undp/foundation-zurb-template.git"
   },
   "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
+    "url": "https://github.com/undp/foundation-sites/issues"
   },
   "private": true
 }
