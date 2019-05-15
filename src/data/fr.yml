@@ -1,7 +1,7 @@
 # generic info
-lang: en
-logo-blue: undp-logo-blue.svg
-logo-white: undp-logo-white.svg
+lang: fr
+logo-blue: pnud-logo-blue.svg
+logo-white: pnud-logo-white.svg
 title: 
 gtm: 
 
@@ -15,12 +15,12 @@ meta:
 
 # i18n
 labels: 
-  undplong: United Nations Development Programme
-  undp: UNDP
-  sdglong: Sustainable Development Goals
-  learnmore: Learn more
+  undplong: Programme des Nations Unies pour le développement
+  undp: PNUD
+  sdglong: Objectifs de développement durable
+  learnmore: En savoir plus
   blank: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
   message: Message
-  share: Share
+  share: Partager
   
 # content
