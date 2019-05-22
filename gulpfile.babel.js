@@ -68,6 +68,7 @@ function pages() {
       data: 'src/data/',
       helpers: 'src/helpers/'
     }))
+    .pipe($.if(PRODUCTION, $.htmlmin({ collapseWhitespace: true, preserveLineBreaks: true })))
     .pipe(gulp.dest(PATHS.dist));
 }
 
