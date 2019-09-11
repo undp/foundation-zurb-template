@@ -52,8 +52,9 @@ function copy() {
 }
 
 function github() {
+  // workaround for multiple projects sharing DOCS folder
   // windows only!
-  var target = __dirname.split('\\').pop();
+  var target = (PATHS.github.startsWith('../')) ? '/' + __dirname.split('\\').pop() : '';
   return gulp.src(PATHS.dist + '/**/*')
     .pipe($.if(PRODUCTION, gulp.dest(PATHS.github + target)));
 }
