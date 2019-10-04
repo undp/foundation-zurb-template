@@ -54,6 +54,5 @@
   "bugs": {
     "url": "https://github.com/undp/foundation-sites/issues"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
-  "private": true
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
