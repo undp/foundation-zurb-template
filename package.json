@@ -12,9 +12,9 @@
   "dependencies": {
     "foundation-sites": "^6.5.1",
     "jquery": "^3.2.1",
-    "lazysizes": "^5.1.1",
+    "lazysizes": "^5.1.2",
     "motion-ui": "^2.0.3",
-    "what-input": "^5.1.2"
+    "what-input": "^5.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -54,5 +54,7 @@
   "bugs": {
     "url": "https://github.com/undp/foundation-sites/issues"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
