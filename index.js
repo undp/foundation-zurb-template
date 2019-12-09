@@ -11,7 +11,7 @@ const project = path.basename(target);
 if (project != '') {
 
   // check if it wasn't deployed already to avoid file overwrite
-  fs.stat(target + path.delimiter + lockfile, (err) => {
+  fs.stat(target + path.sep + lockfile, (err) => {
 
     if (err) {
 
@@ -25,13 +25,13 @@ if (project != '') {
         if (err) throw err;
 
         // update new package description
-        fs.readFile(target + path.delimiter + 'package.json', (err, data) => {
+        fs.readFile(target + path.sep + 'package.json.default', (err, data) => {
           if (err) throw err;
-          fs.writeFile(target + path.delimiter + 'package.json', data.toString().replace('{name}', project));
-          fs.writeFile(target + path.delimiter + lockfile, new Date.now().toISOString());
+          fs.writeFile(target + path.sep + 'package.json', data.toString().split('{name}').join(project), (err) => {if (err) throw err;});
+          fs.writeFile(target + path.sep + lockfile, new Date().toISOString(), (err) => {if (err) throw err;});
         });
 
-        console.log('done');
+        console.log('done. Please run "npm install"');
       });
     } else {
       return console.log('Already deployed, finsih this');
