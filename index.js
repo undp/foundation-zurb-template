@@ -18,14 +18,16 @@ if (project != '') {
       // no lock file - good to go
       ncp.limit = 5;
       ncp('./deploy', target, function (err) {
-        if (err) {
-          return console.error(err);
-        }
+        // if (err) {
+        //   return console.error(err);
+        // }
+
+        if (err) throw err;
 
         // update new package description
         fs.readFile(target + path.delimiter + 'package.json', (err, data) => {
           if (err) throw err;
-          fs.writeFile(target + path.delimiter + 'package.json', data.replace('{name}', project));
+          fs.writeFile(target + path.delimiter + 'package.json', data.toString().replace('{name}', project));
           fs.writeFile(target + path.delimiter + lockfile, new Date.now().toISOString());
         });
 

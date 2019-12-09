@@ -1,6 +1,6 @@
 {
   "name": "@undp/foundation-zurb-template",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "UNDP version of Official ZURB Template for Foundation for Sites.",
   "main": "index.js",
   "scripts": {
