@@ -4,14 +4,14 @@ const ncp = require('ncp').ncp;
 
 const lockfile = '.undp_zurb_template_lock';
 
-const target = path.resolve('../../');
+const target = path.resolve('../../../');
 const project = path.basename(target);
 
 // valid directory name found
 if (project != '') {
 
   // check if it wasn't deployed already to avoid file overwrite
-  fs.stat(target + lockfile, (err) => {
+  fs.stat(target + path.delimiter + lockfile, (err) => {
 
     if (err) {
 
@@ -23,10 +23,10 @@ if (project != '') {
         }
 
         // update new package description
-        fs.readFile(target + 'package.json', (err, data) => {
+        fs.readFile(target + path.delimiter + 'package.json', (err, data) => {
           if (err) throw err;
-          fs.writeFile(target + 'package.json', data.replace('{name}', project));
-          fs.writeFile(target + lockfile, new Date.now().toISOString());
+          fs.writeFile(target + path.delimiter + 'package.json', data.replace('{name}', project));
+          fs.writeFile(target + path.delimiter + lockfile, new Date.now().toISOString());
         });
 
         console.log('done');
