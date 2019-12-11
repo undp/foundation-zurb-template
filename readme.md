@@ -1,5 +1,5 @@
 # UNDP static site template
-## based on [Zurbe Foundation template](https://github.com/zurb/foundation-zurb-template)
+## based on [Zurb Foundation template](https://github.com/zurb/foundation-zurb-template)
 
 ## Installation
 
@@ -10,7 +10,7 @@ To use this template, your computer needs:
 
 ### Manual Setup
 
-To manually set up the template, create project folder, switch to it and create default project.json file (it will replaced later):
+To manually set up the template, create project folder, switch to it and create default project.json file (it will be replaced later):
 
 ```bash
 md projectname
