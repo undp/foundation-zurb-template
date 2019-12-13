@@ -10,7 +10,7 @@
   "author": "Jura Khrapunov <jura.khrapunov@undp.org>",
   "license": "CC BY-NC 4.0",
   "dependencies": {
-    "foundation-sites": "^6.6.0",
+    "foundation-sites": "^6.6.1",
     "jquery": "^3.4.1",
     "lazysizes": "^5.1.2",
     "motion-ui": "^2.0.3",
