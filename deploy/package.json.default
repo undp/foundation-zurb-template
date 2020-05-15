@@ -10,15 +10,15 @@
   "author": "Jura Khrapunov <jura.khrapunov@undp.org>",
   "license": "CC BY-NC 4.0",
   "dependencies": {
-    "foundation-sites": "^6.6.1",
-    "jquery": "^3.4.1",
+    "foundation-sites": "^6.6.3",
+    "jquery": "^3.5.1",
     "lazysizes": "^5.1.2",
     "motion-ui": "^2.0.3",
-    "what-input": "^5.2.6"
+    "what-input": "^5.2.9"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.7.6",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "@babel/register": "^7.7.4",
     "autoprefixer": "^9.7.3",
     "babel-loader": "^8.0.6",
@@ -31,10 +31,10 @@
     "gulp-extname": "^0.2.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^6.2.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-load-plugins": "^2.0.1",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "js-yaml": "^3.13.1",
@@ -43,7 +43,7 @@
     "style-sherpa": "^1.0.2",
     "uncss": "^0.17.2",
     "vinyl-named": "^1.1.0",
-    "webpack": "^4.41.2",
+    "webpack": "^4.43.0",
     "webpack-stream": "^5.2.1",
     "yargs": "^15.0.2"
   },

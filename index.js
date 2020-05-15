@@ -18,9 +18,6 @@ if (project != '') {
       // no lock file - good to go
       ncp.limit = 5;
       ncp('./deploy', target, function (err) {
-        // if (err) {
-        //   return console.error(err);
-        // }
 
         if (err) throw err;
 
@@ -34,7 +31,7 @@ if (project != '') {
         console.log('done. Please run "npm install"');
       });
     } else {
-      return console.log('Already deployed, finsih this');
+      return console.log('Already deployed, finish this');
     }
   });
 }
