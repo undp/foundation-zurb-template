@@ -2,25 +2,26 @@
 lang: fr
 logo-blue: pnud-logo-blue.svg
 logo-white: pnud-logo-white.svg
-title: 
-gtm: 
+title:
+gtm:
 
 # page metadata
-meta: 
-  title: 
-  description: 
-  keywords: 
-  canonical: 
-  ogtitle: 
+meta:
+  title:
+  description:
+  keywords:
+  canonical:
+  ogtitle:
 
 # i18n
-labels: 
+labels:
   undplong: Programme des Nations Unies pour le développement
   undp: PNUD
   sdglong: Objectifs de développement durable
   learnmore: En savoir plus
-  blank: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+  blank: assets/img/0.png
+  blank-inline: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
   message: Message
   share: Partager
-  
+
 # content

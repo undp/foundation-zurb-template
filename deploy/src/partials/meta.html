@@ -1,16 +1,16 @@
 <title>{{this.meta.title}}</title>
 <meta name="description" content="{{this.meta.description}}"/>
-<meta name="keywords" content="{{this.meta.keywords}}"/>
+{{#if this.meta.keywords}}<meta name="keywords" content="{{this.meta.keywords}}"/>{{/if}}
 <link rel="canonical" href="{{this.meta.canonical}}{{#ifequal this.lang "en"}}{{else}}{{this.lang}}/{{/ifequal}}"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="{{this.meta.ogtitle}}"/>
 <meta property="og:site_name" content="{{this.labels.undp}}"/>
 <meta property="og:url" content="{{this.meta.canonical}}{{#ifequal this.lang "en"}}{{else}}{{this.lang}}/{{/ifequal}}"/>
 <meta property="og:description" content="{{this.meta.description}}"/>
-<meta property="og:image" content="{{this.meta.canonical}}assets/img/static-cards-{{this.lang}}.png"/>
-<meta property="og:image:width" content="1280"/>
-<meta property="og:image:height" content="720"/>
-<meta name="twitter:card" content="summary_large_image"/>  
+<meta property="og:image" content="{{this.meta.canonical}}assets/img/sm-card.jpg"/>
+<meta property="og:image:width" content="1503"/>
+<meta property="og:image:height" content="913"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="@undp"/>
 <link rel="alternate" hreflang="en" href="{{@root.root}}"/>
 <link rel="alternate" hreflang="fr" href="{{@root.root}}fr/"/>

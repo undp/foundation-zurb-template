@@ -2,25 +2,26 @@
 lang: en
 logo-blue: undp-logo-blue.svg
 logo-white: undp-logo-white.svg
-title: 
-gtm: 
+title:
+gtm:
 
 # page metadata
-meta: 
-  title: 
-  description: 
-  keywords: 
-  canonical: 
-  ogtitle: 
+meta:
+  title:
+  description:
+  keywords:
+  canonical:
+  ogtitle:
 
 # i18n
-labels: 
+labels:
   undplong: United Nations Development Programme
   undp: UNDP
   sdglong: Sustainable Development Goals
   learnmore: Learn more
-  blank: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+  blank: assets/img/0.png
+  blank-inline: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
   message: Message
   share: Share
-  
+
 # content

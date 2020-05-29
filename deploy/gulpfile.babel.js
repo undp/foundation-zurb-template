@@ -69,7 +69,7 @@ function pages() {
       data: 'src/data/',
       helpers: 'src/helpers/'
     }))
-    .pipe($.if(PRODUCTION, $.htmlmin({ collapseWhitespace: true, preserveLineBreaks: true })))
+    .pipe($.if(PRODUCTION, $.htmlmin({ collapseWhitespace: true, preserveLineBreaks: true, removeComments: true })))
     .pipe(gulp.dest(PATHS.dist));
 }
 
@@ -130,7 +130,7 @@ function javascript() {
     .pipe(named())
     .pipe($.sourcemaps.init())
     .pipe(webpackStream(webpackConfig, webpack2))
-    .pipe($.if(PRODUCTION, $.uglify()
+    .pipe($.if(PRODUCTION, $.terser()
       .on('error', e => { console.log(e); })
     ))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))

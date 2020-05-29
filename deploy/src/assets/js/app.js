@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import 'what-input';
-import lazySizes from 'lazysizes';
+// import lazySizes from 'lazysizes';
 
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
@@ -13,6 +13,10 @@ window.jQuery = $;
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 import './lib/foundation-explicit-pieces';
+
+// plug any additional functionality here
+// import {MyModule} from './MyModule';
+// Foundation.plugin(MyModule, 'MyModule');
 
 $(document).foundation();
 
